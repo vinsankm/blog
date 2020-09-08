@@ -1,4 +1,6 @@
 header {
+    height: 10vh;
+    text-align: center;
     background-color: indigo;
     color: goldenrod;
     font-size: 2em;
