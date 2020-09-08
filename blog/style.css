@@ -1,13 +1,34 @@
 body {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
-.title {
+header {
     text-align: center;
-    background-color: indigo;
-    color: goldenrod;
-    font-size: 2em;
-    width: 100%;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 3em;
+    padding: 5px;
+    border: bottom;
+    border-bottom-style: solid;
+    border-bottom-color: gold;
+}
+
+figure {
+    width: 200px;
+    display: inline-block;
+    margin: 3px;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: dodgerblue;
+    vertical-align: top;
+    border-style: solid;
+    border-color: gold;
+    border-radius: 15px;
+}
+
+figure:hover {
+    background-color: cornflowerblue;
 }
