@@ -45,10 +45,14 @@ header {
     margin: 5px;
 }
 
-.maincard p {
+#top {
     margin: 5px;
     border-top-style: solid;
     border-top-color: darkgray;
+}
+
+.maincard p {
+    margin: 5px;
 }
 
 .sidebar {
