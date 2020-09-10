@@ -1,0 +1,98 @@
+html{
+    height: 100%;
+}
+
+body {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+}
+
+header {
+    text-align: center;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 4em;
+    padding: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+}
+
+.main {
+    height: 100%;
+}
+
+.left {
+    float: left;
+    width: 75%;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: gainsboro;
+}
+
+.maincard {
+    padding: 5px;
+    background-color: white;
+    height: 20%;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.maincard h2 {
+    padding: 0px;
+    margin: 5px;
+}
+
+.maincard p {
+    margin: 5px;
+    border-top-style: solid;
+    border-top-color: darkgray;
+}
+
+.sidebar {
+    float: left;
+    width: 25%;
+    height: 100%;
+    background-color: gainsboro;
+}
+
+.aboutme {
+    height: 55%;
+    padding: 5px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.aboutme h2 {
+    padding: 0px;
+    margin: 5px;
+}
+
+.aboutme p {
+    border-top-style: solid;
+    border-top-color: darkgray;
+    padding: 0px;
+    margin: 5px;
+}
+
+.links {
+    height: 30%;
+    padding: 5px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    box-sizing: border-box;
+    border-top-style: solid;
+    border-top-color: black;
+    background-color: dodgerblue;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    bottom: auto;
+}
