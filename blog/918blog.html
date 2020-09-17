@@ -26,7 +26,7 @@
                 <p>
                     Justify-content controls how the children are placed along the main axis. The properties are: flex-start, flex-end, center, 
                     space-between, space-around, and space-evenly. Flex-direction controls which way the main axis is orientated, whether it be
-                    horizontally or vertically.The properties are row and column.
+                    horizontally or vertically. The properties are row and column.
                 </p>
                     <code>
                         .card {<br> 
@@ -35,9 +35,9 @@
                     </code>
                 <p>
                     Align-items controls how the children are placed along the cross axis. The available properties are: flex-start, flex-end, 
-                    center, and stretch. Most of them are self explanatory besides baseline. Baseline aligns the text horizontally in line with 
-                    which the text sits upon. Now that I learned how the alignment of children works on the x and y axis, I can now focus on 
-                    the width or size of each child. That is where flex-grow comes into play.
+                    center, and stretch. Most of them are self explanatory besides baseline and stretch. Baseline aligns the text horizontally in line with 
+                    which the text sits upon. Stretch allows for the children's height to stretch until it reaches the bottom of the parent's box.
+                     Now that I learned how the alignment of children works on the x and y axis, I can now focus on the width or size of each child. That is where flex-grow comes into play.
                 </p>
                     <code>
                         .card1 {<br> 
@@ -48,8 +48,8 @@
                         }<br>
                     </code>
                     <p>
-                        Flex-grow works as a ratio the defines the width of each child across the main axis. Flex-grow works as a ratio and can grow
-                        or shrink according to the browser size. In the example I gave, the two children have a 1:2 sizing ratio. This means that
+                        Flex-grow works as a ratio the defines the width of each child across the main axis. Flex-grow works as a ratio meaning it can grow
+                        or shrink according to its parent's size. In the example I gave, the two children have a 1:2 sizing ratio. This means that
                         card1's width will be 33% of the parents width, while card2 will be 66% of its parents width. This can be altered though
                         through the use of flex-basis. Flex-basis controls the initial main size of a flex child. This value is defaulted to auto,
                         but it can be changed to fit your needs. An example woul dbe to set the flex-grow to 0. This would initialize the child to
@@ -57,8 +57,8 @@
                         with a width of 200 pixels.
                     </p>
                     <p>
-                        Thank you for following me along my journey to learning the deatails of flex-box and how to use it. I hope to see you next week
-                        when we delve even deeping into the waters of web development!
+                        Thank you for following me along my journey to learning the details of flex-box and how to use it. I hope you learned as 
+                        much as I did and I will see you next week when we delve even deeping into the waters of web development!
                     </p>
             </div>
         </div>
