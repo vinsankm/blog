@@ -11,55 +11,50 @@
     <div class="main">
         <div class="left">
             <div class="maincard">
-                <h2>First Blog</h2>
-                <p id="top">This week I began learning what flex box is and how it makes formatting a HTML file much easier. The three main
-                    benefits it gives you is: control over the distribution of children along the  main axis, the alignment of the children
-                    along the cross axis, and the contraction and expansion of the children along both of the axis. Without further ado, 
-                    lets dive into the topic of flex box.
+                <h2>Third Blog</h2>
+                <p id="top">This week I read an <a href="https://scotch.io/bar-talk/8-emmet-tips-you-might-not-know">article</a> on the various ways to code 
+                    like a boss on Visual Studio Code using Emmet. Emmet is a plug
+                    in to make typing and working with HTML much more efficient. An example of the efficieny Emmet allows can be seen here:
                 </p>
                 <code>
-                    .card {<br> 
-                        &nbsp; flex-direction: column;<br>
-                        &nbsp; justify-content: space-between;<br>
-                    }<br>
+                    &nbsp; div.foo#bar<br>
+                    &nbsp; &lt;div class="foo" id="bar"&gt;&lt;/div&gt;<br>
                 </code>
                 <p>
-                    Justify-content controls how the children are placed along the main axis. The properties are: flex-start, flex-end, center, 
-                    space-between, space-around, and space-evenly. Flex-direction controls which way the main axis is orientated, whether it be
-                    horizontally or vertically. The properties are row and column.
+                    This is a neat little shortcut that makes creating divs with a class and tag much quicker. The div lets Emmet know that
+                    you are creating a div. The .foo lets Emmet know you want the div to be in class foo. And the #bar lets it know you want the
+                    div to have an id of bar. Instead of typing it all out manually, you just have to type the shortcut and hit tab. This can be
+                    even more efficient if you want to create multiple divs because all you have to add is a *(number of divs) at the end of it and
+                    it will make that many divs with the criteria you defined for it. Thats just one example of the quality of life improvements
+                    provided to us by Emmet. 
                 </p>
-                    <code>
-                        .card {<br> 
-                            &nbsp; align-items: center;<br>
-                        }<br>
-                    </code>
                 <p>
-                    Align-items controls how the children are placed along the cross axis. The available properties are: flex-start, flex-end, 
-                    center, and stretch. Most of them are self explanatory besides baseline and stretch. Baseline aligns the text horizontally in line with 
-                    which the text sits upon. Stretch allows for the children's height to stretch until it reaches the bottom of the parent's box.
-                     Now that I learned how the alignment of children works on the x and y axis, I can now focus on the width or size of each child. That is where flex-grow comes into play.
+                    Emmet does not only provide keyboard shortcuts but also provides us with some tools. One really useful tool is the "Wrap with 
+                    Abbreviation" tool. Normally if you wanted to put a new div around existing html, you would have to type out the new div,  
+                    copy and paste everything into that new div, then manually have to fix the indentation. The Wrap with Abbreviation tool does
+                    this all for you. You just highlight the text you want to wrap then type what you would like to wrap it with. 
                 </p>
-                    <code>
-                        .card1 {<br> 
-                            &nbsp; flex-grow: 1;<br>
-                        }<br>
-                        .card2 {<br> 
-                            &nbsp; flex-grow: 2;<br>
-                        }<br>
-                    </code>
-                    <p>
-                        Flex-grow works as a ratio the defines the width of each child across the main axis. Flex-grow works as a ratio meaning it can grow
-                        or shrink according to its parent's size. In the example I gave, the two children have a 1:2 sizing ratio. This means that
-                        card1's width will be 33% of the parents width, while card2 will be 66% of its parents width. This can be altered though
-                        through the use of flex-basis. Flex-basis controls the initial main size of a flex child. This value is defaulted to auto,
-                        but it can be changed to fit your needs. An example woul dbe to set the flex-grow to 0. This would initialize the child to
-                        fit the width of its content and no larger. You could also do the reverse and set it to 200px, causing the flex child to begin
-                        with a width of 200 pixels.
-                    </p>
-                    <p>
-                        Thank you for following me along my journey to learning the details of flex-box and how to use it. I hope you learned as 
-                        much as I did and I will see you next week when we delve even deeping into the waters of web development!
-                    </p>
+                <code>
+                    &nbsp; {count: $}*3<br>
+                    &nbsp; count: 1<br>
+                    &nbsp; count: 2<br>
+                    &nbsp; count: 3<br>
+                </code>
+                <p>
+                    This shortcut uses the $ operator. It lets Emmet know that you want that to serve as a incrementing variable. So if you multiply
+                    it by 3 then that $ will be substituted for 1, 2, and 3 in each line in pastes. This can be very useful if you are working with
+                    larger numbers or want to create a set of divs with different classes or ids.
+                </p>
+                <p>
+                    The last trick we will be discussing is the balance inward and balance outward Emmet commands. What these commands do are
+                    change the highighted/selected area. Each time the balance outward command is used, the selected area expands to its parent tag.
+                    Balance inward does the opposite, in how it shrinks the highlighted area each time the command is used. It is recommended to create
+                    a keybind for these commands so they can be used quickly and in succession easily.
+                </p>
+                <p>
+                    I hope you enjoyed learning about some Emmet tips with me this week. I hope you join me next Friday as my journey into web development
+                    continues.
+                </p>
             </div>
         </div>
         <div class="sidebar">
