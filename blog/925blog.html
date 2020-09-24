@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Blog</title>
+    <link rel="stylesheet" href="blogpage.css">
+</head>
+<body>
+    <a href="http://157.230.56.100:8000/"><header>Welcome to my blog!</header></a>
+    <div class="main">
+        <div class="left">
+            <div class="maincard">
+                <h2>First Blog</h2>
+                <p id="top">This week I began learning what flex box is and how it makes formatting a HTML file much easier. The three main
+                    benefits it gives you is: control over the distribution of children along the  main axis, the alignment of the children
+                    along the cross axis, and the contraction and expansion of the children along both of the axis. Without further ado, 
+                    lets dive into the topic of flex box.
+                </p>
+                <code>
+                    .card {<br> 
+                        &nbsp; flex-direction: column;<br>
+                        &nbsp; justify-content: space-between;<br>
+                    }<br>
+                </code>
+                <p>
+                    Justify-content controls how the children are placed along the main axis. The properties are: flex-start, flex-end, center, 
+                    space-between, space-around, and space-evenly. Flex-direction controls which way the main axis is orientated, whether it be
+                    horizontally or vertically. The properties are row and column.
+                </p>
+                    <code>
+                        .card {<br> 
+                            &nbsp; align-items: center;<br>
+                        }<br>
+                    </code>
+                <p>
+                    Align-items controls how the children are placed along the cross axis. The available properties are: flex-start, flex-end, 
+                    center, and stretch. Most of them are self explanatory besides baseline and stretch. Baseline aligns the text horizontally in line with 
+                    which the text sits upon. Stretch allows for the children's height to stretch until it reaches the bottom of the parent's box.
+                     Now that I learned how the alignment of children works on the x and y axis, I can now focus on the width or size of each child. That is where flex-grow comes into play.
+                </p>
+                    <code>
+                        .card1 {<br> 
+                            &nbsp; flex-grow: 1;<br>
+                        }<br>
+                        .card2 {<br> 
+                            &nbsp; flex-grow: 2;<br>
+                        }<br>
+                    </code>
+                    <p>
+                        Flex-grow works as a ratio the defines the width of each child across the main axis. Flex-grow works as a ratio meaning it can grow
+                        or shrink according to its parent's size. In the example I gave, the two children have a 1:2 sizing ratio. This means that
+                        card1's width will be 33% of the parents width, while card2 will be 66% of its parents width. This can be altered though
+                        through the use of flex-basis. Flex-basis controls the initial main size of a flex child. This value is defaulted to auto,
+                        but it can be changed to fit your needs. An example woul dbe to set the flex-grow to 0. This would initialize the child to
+                        fit the width of its content and no larger. You could also do the reverse and set it to 200px, causing the flex child to begin
+                        with a width of 200 pixels.
+                    </p>
+                    <p>
+                        Thank you for following me along my journey to learning the details of flex-box and how to use it. I hope you learned as 
+                        much as I did and I will see you next week when we delve even deeping into the waters of web development!
+                    </p>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="aboutme">
+                <h2>About Me</h2>
+                <p>My name is Kyle Vinsand. I am a Junior computer science major at James Madison University.</p>
+            </div>
+            <div class="links">
+                <h2>Links</h2>
+                <ul>
+                    <li>LinkedIn</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>Created by Kyle Vinsand</footer>
+</body>
+</html>
