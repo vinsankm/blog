@@ -1,5 +1,5 @@
 html{
-    height: 100%;
+    height: 100vh;
 }
 
 body {
@@ -25,6 +25,8 @@ header {
 }
 
 .left {
+    overflow-y: scroll;
+    overflow-x: hidden;
     float: left;
     width: 75%;
     box-sizing: border-box;
