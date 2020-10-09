@@ -12,37 +12,38 @@
         <div class="left">
             <div class="maincard">
                 <h2>Fifth Blog</h2>
-                <p id="top">I was creating the homepage for my project in my web development course and I wasn't too happy with how it was looking.
-                    I was curious if there was a way to make it look more modern and and depth to it. That's where my topic for the week was chosen.
-                    I decided to look into the ability to blend objects using CSS. <a href="https://www.sarasoueidan.com/blog/compositing-and-blending-in-css/">This</a> is the article I read and will be relaying my learnings to
-                    you from. The first aspect is the background property. It can use methods like linear-gradient(), radial-gradient(), and others.
-                    But it can also us a property called background-blend-mode. Backgrounds that used to only be possible by setting an image, can now
-                    be done using a CSS property. A large benefit to this is the quicker load times. What it does is it blends one object with another
-                    allowing for layering and a mixing of color palletes.
+                <p id="top">Most programming languages revolve around equations and functions to complete their function. But did you know that 
+                    CSS can also employ the usage of functions. This week's blog will be spent exploring what functions are used for and how
+                    they can be implemented.
+                </p>
+                <p>
+                    Unlike other programming languages where you can create your own functions, in CSS that falls onto the CSS selectors. Another
+                    difference is that the functions effect a specific area, unlike other languages where a function can have ramifications
+                    throughout the entirety of the code. 
                 </p>
                 <code>
-                    &nbsp; background-image: firstPicture.png, secondPicture.png;<br>
-                    &nbsp; background-color: blue;<br>
-                    &nbsp; background-blend-mode: multiply;<br>
+                    .glowBorder {<br>
+                    &nbsp; filter: drop-shadow(0.25rem 0 0.75rem #ef9035)<br>
+                    }<br>
                 </code>
                 <p>
-                    What the example above does is set the background to two different images. It takes those images and applies the blend mode "multiply".
-                    Multiply takes the color values of the firs timage and multiplies it with the second image's. This is just one of many modes that can 
-                    be applied. The varying mdes mix colors or calculate the combination differently depending on what you want it to look like.
-                </p>
-                <p>
-                    Similar to the background-blend-mode, there is the property mix-blend-mode. Where background blend is used to only to mix background
-                    elements, mix blend can affect any element. A common use for this is to combine text with the background in a visually pleasing manner.
+                    The drop-shadow function is a perfect example of this. It is a calculation that only affects what you tell it. Drop-shadow calculates how
+                    to determine the hue, transparency, etc. for you. This just one of many functions that make creating fluent visuals much easier. These functions
+                    can be used for more than just static visuals. They can also be used to make animations.
                 </p>
                 <code>
-                    &nbsp; mix-blend-mode: difference;<br>
+                    .animatedThing {<br>
+                        &nbsp;transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);<br>
+                    }<br>
                 </code>
                 <p>
-                    The mix blend mode difference takes the target element and sets its color to be the opposite of the backgrounds. This can be
-                    used in many cool ways. One way is to create translucent text or text that looks like it can interact with the background.
+                    This function is more complicated than the other one but how we use it is very similar. All the programmer has to do is call the function 
+                    and provide numbers for the calculation. This function takes the parameters and creates custom timing for your animations. One use of the 
+                    function is that it allows you to vary the animation's speed over the course of the animation. There are far more functions available to 
+                    use in CSS and I implore you to explore them as well to improve your web development capabilities.
                 </p>
                 <p>
-                    I hope you enjoyed this weeks blog post exploring blending in CSS. I hope to see you next week!
+                    I hope you enjoyed this weeks blog post exploring the use of functions in CSS. I you enjoyed and that I see you next week!
                 </p>
             </div>
         </div>
