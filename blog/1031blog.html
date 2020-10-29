@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sixth Blog</title>
+    <link rel="stylesheet" href="blogpage.css">
+</head>
+<body>
+    <a href="http://157.230.56.100:8000/"><header>Welcome to my blog!</header></a>
+    <div class="main">
+        <div class="left">
+            <div class="maincard">
+                <h2>Sixth Blog</h2>
+                <p id="top">This week in web development, we began learning React js. So because of this, I have chosen to read and explain 
+                    <a href="https://www.digitalocean.com/community/tutorials/react-error-boundaries">this Reactblog I read</a>. This article
+                    discusses error boundaries and how to handle possible errors a user's browser can throw when using a React application. 
+                    Continue reading to find out how to prevent your app from crashing.
+                </p>
+                <p>
+                    Errors can be a common, unavoidable challenge that must be overcome when developing an application. Sometimes these errors 
+                    can be caused by developmental accidents like accessing an object that doesn't exist. But sometimes, errors can be out of the 
+                    developers hands like a failed http request to a third party API. So we must have a way to deal with these issues if they arise.
+                    This is where error boundaries come into play. Error boundaries are a strategy for handling errors through the use of two methods
+                    in React components. They are the getDerivedStateFromError and componentDidCatch methods. 
+                </p>  
+                <code>
+                    static getDerivedStateFromError(error) {<br>
+                        &nbsp;// Update the state so next render shows a fallback UI.<br>
+                        &nbsp;return { error: error };<br>
+                    }<br>
+                </code>
+                <p>GetDerivedStateFromError is a method that updates the state when an error is discovered so the application can display one last 
+                    render instead of a broken component.
+                </p>
+                <code>
+                    componentDidCatch(error, info) {<br>
+                        &nbsp;// Log the error to an error reporting service<br>
+                        &nbsp;logErrorToMyService(error, info);<br>
+                    }<br>
+                </code>
+                <p>
+                    ComponentDidCatch is a method that is a tool for triggering side effects when an error is detected. An example use of this method
+                    is logging the error or saving the stack trace to make it easier for the developer to debug the application. Any react component
+                    is considered an error boundary if it contains one of these two methods. It is always a good idea to implement atleast one of these
+                    methods in the root of your application. Error boundaries are only designated to detect errors during the render phase, in a lifecycle
+                    method, or in the constructor. So in areas where this does not apply, like event handler errors, must be handled through the use of 
+                    try-catch statements.
+                </p>
+                <p>
+                    Thank you for joining me as I begin my journey into React.js development. I hope you learned something new this week along with me and I
+                    hope you join in next week as we continue learning React.
+                </p>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="aboutme">
+                <h2>About Me</h2>
+                <p>My name is Kyle Vinsand. I am a Junior computer science major at James Madison University.</p>
+            </div>
+            <div class="links">
+                <h2>Links</h2>
+                <ul>
+                    <li>LinkedIn</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>Created by Kyle Vinsand</footer>
+</body>
+</html>
