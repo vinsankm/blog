@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seventh Blog</title>
+    <link rel="stylesheet" href="blogpage.css">
+</head>
+<body>
+    <a href="http://157.230.56.100:8000/"><header>Welcome to my blog!</header></a>
+    <div class="main">
+        <div class="left">
+            <div class="maincard">
+                <h2>Seventh Blog</h2>
+                <p id="top">As my journey to mastering React continues, I have decided to learn a Javascript library called Redux. To assist me in learning this technology, I read this and followed this 
+                    <a href="https://medium.com/javascript-in-plain-english/the-only-introduction-to-redux-and-react-redux-youll-ever-need-8ce5da9e53c6">article</a>.
+                </p>
+                <p>Redux is a React library that is used to manage the application's state in a single immutable state tree. It is similar to a
+                    global instance that stores information that can be used later in the application. An example usage of this technology could
+                    be a loading bar for a website that renders while the loading state is true. There are no rules or limitation on what a developer
+                    can be stored in Redux, besides that it has to be serialized. Two very important patterns to note and acknowledge as you develop 
+                    using Redux are: single source of truth and immutability. Single source of truth means that there is only one Store that you can 
+                    keep track of the state for the whole application. The second pattern, immutability, means that you do not directly access and alter
+                    the state object and its properties. Instead, a new object will need to be created and you can then recalculate and update the state using 
+                    that new object. Redux itself has three main parts: actions, reducers, and store.
+                </p>
+                    <code>
+                        const store = Redux.createStore(counterReducer)<br>
+                        store.subscribe(render)<br>
+                        const value1 = document.getElementById('value')<br>
+                        function render() {<br>
+                        &nbsp;const state = store.getState()<br>
+                        &nbsp;const newValue = state.value.toString()<br>
+                        &nbsp;value1.innerHTML = newValue<br>
+                        }<br>
+                        render()<br>
+                    </code>
+                    <p>Store contains the state of the application. It is technically an object, even though it may look like a Javascript class.
+                        When creating the redux, it is important to remember that you follow the Redux pattern that it should have only one store.
+                        The developer can put as many values and nest them as much as they want inside the store.
+                    </p>
+                    <p> The second main part of Redux are actions. Actions describe what happened in the state but not how they happened. One criteria
+                        actions must meet is that they require a certain type field. This field's purpose is to describe what action is being dispatched.
+                        Another aspect of actions are Action Creators. They are functions that create and return plain Javascript objects. Their purpose 
+                        is to allow for dynamic data insertion into the actions.
+                    </p>
+                    <p>
+                        Lastly, I am going to discuss the third main aspect of Redux which are Reducers. Reducers are functions that define how the 
+                        application's state changes. When an action is dispatched, the action then gets passed to the reducer. A reducer function takes
+                        two parameters: the past app state and the action being dispatched. This function then recalculates the new state and returns it.
+                        So the general data flow in redux is the UI dispatches an action to the reducer. The new state returned by the reducer is then saved
+                        inside of the store. 
+                    </p>
+                    <p>
+                        I hope you enjoyed this weeks topic of learning Redux and learned soemthing new. I hope to see you next week as our journey into web 
+                        development continues.
+                    </p>
+                </p>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="aboutme">
+                <h2>About Me</h2>
+                <p>My name is Kyle Vinsand. I am a Junior computer science major at James Madison University.</p>
+            </div>
+            <div class="links">
+                <h2>Links</h2>
+                <ul>
+                    <li>LinkedIn</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>Created by Kyle Vinsand</footer>
+</body>
+</html>
